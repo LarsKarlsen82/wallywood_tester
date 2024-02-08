@@ -53,26 +53,6 @@
     }
   }
 }
-// .NavBasket {
-//   list-style: none;
-//   margin-bottom: 60px;
-//   padding: 0;
-  
-//   // Updated styles for the Basket
-//   a {
-//     color: $DarkBrown;
-//     text-transform: uppercase;
-//     text-decoration: none;
-
-//     &:hover {
-//       color: $LightBrown;
-//     }
-
-//     &.activeLink {
-//       color: lightgrey;
-//     }
-//   }
-// }
 .NavBasket {
   position: absolute; /* Set the position to absolute */
   right: 0; /* Adjust as needed */

@@ -1,0 +1,29 @@
+// PosterList.module.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+:root {
+  --font-family: 'Raleway', sans-serif;
+}
+
+.posterResults {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Additional styling for individual poster items
+  .posterItem {
+    // Your individual poster item styles go here
+    width: 100%;
+
+    img {
+      max-width: 180px;  // Set maximum width for images
+      height: auto;     // Maintain aspect ratio
+      display: block;   // Remove extra space below inline images
+    }
+  }
+}

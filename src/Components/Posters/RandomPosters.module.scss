@@ -1,0 +1,22 @@
+/* RandomPosters.module.scss */
+
+.randomPosters {
+  display: flex;
+  gap: 16px; /* Adjust the gap between items as needed */
+}
+
+.posterItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.posterImage {
+  width: 200px; /* Adjust the image width as needed */
+  height: auto;
+  margin-right: 16px; /* Adjust the margin between image and details as needed */
+}
+
+.posterDetails {
+  flex: 1; /* Take remaining space */
+}

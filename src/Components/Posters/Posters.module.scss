@@ -1,0 +1,20 @@
+// Posters.module.scss
+
+.postersContainer {
+    display: flex;
+    background-color: white;
+  }
+  
+  .postersList {
+    flex: 1; 
+    padding: 20px;
+    border-right: 1px solid #ccc; 
+  }
+  
+  .FilmResults {
+    flex: 2; 
+    padding: 20px;
+  }
+  
+
+

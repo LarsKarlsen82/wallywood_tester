@@ -1,5 +1,6 @@
 import styles from './Main.module.scss';
 
+
 export const Main = () => {
 
     return (
@@ -9,4 +10,4 @@ export const Main = () => {
     )
 }
 
-export default Main
+export default Main;

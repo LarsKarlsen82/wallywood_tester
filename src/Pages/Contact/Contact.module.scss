@@ -1,0 +1,16 @@
+@import '../../assets/css/Variables.scss';
+
+// Contact.module.scss
+.contactFormWrapper {
+  background-color: white;
+}
+
+.contactContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+  
+  .error{
+    color:red;
+  }

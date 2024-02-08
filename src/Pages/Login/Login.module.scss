@@ -1,0 +1,57 @@
+/* Login.module.scss */
+
+/* Add your custom styles for the Login component here */
+
+form {
+    max-width: auto;
+    margin: 0 auto;
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid blue; /* Set border color to blue */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form h3{
+    color:#5C1F06;
+    font-size: 30px;
+  }
+  label {
+    margin-bottom: 8px;
+    margin-left: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    background-color: white; /* Set background color to white */
+    border: 1px solid blue; /* Set border color to blue */
+    margin: 10px auto 16px 15px; //top, right, bottom, left
+  
+  
+  }
+  
+  span {
+    color: red;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .LoggedInContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Add more styles as needed */
+  
