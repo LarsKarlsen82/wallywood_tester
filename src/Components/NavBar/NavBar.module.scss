@@ -1,0 +1,131 @@
+// NavBar.module.scss
+@import '../../assets/css/Variables.scss';
+
+.NavContainer {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 87%;
+  background-color: $White;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.NavDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid rgb(92, 30, 5);
+}
+
+.NavList {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    margin-left: auto;
+    flex-direction: row; // Set the direction to row for a horizontal layout
+  
+  li {
+    margin-right: 20px;
+
+    &:nth-last-child(1) {
+      margin-right: 0; // Remove margin for the second-to-last child (Basket)
+  
+  }
+    // Apply your mixin for link styles here
+    a {
+      color: $DarkBrown;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        color: $LightBrown;
+        
+      }
+
+      &.activeLink {
+        color: lightgrey;
+      }
+    }
+  }
+}
+// .NavBasket {
+//   list-style: none;
+//   margin-bottom: 60px;
+//   padding: 0;
+  
+//   // Updated styles for the Basket
+//   a {
+//     color: $DarkBrown;
+//     text-transform: uppercase;
+//     text-decoration: none;
+
+//     &:hover {
+//       color: $LightBrown;
+//     }
+
+//     &.activeLink {
+//       color: lightgrey;
+//     }
+//   }
+// }
+.NavBasket {
+  position: absolute; /* Set the position to absolute */
+  right: 0; /* Adjust as needed */
+  top: 15%; /* Adjust as needed */
+  transform: translateY(-50%); /* Center vertically */
+  list-style: none;
+  margin-bottom: 60px;
+  padding: 20px;
+
+  a {
+    color: $DarkBrown;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $LightBrown;
+    }
+
+    &.activeLink {
+      color: lightgrey;
+    }
+  }
+}
+
+.NavH2 {
+  order: -1;
+  text-transform: uppercase;
+  background-image: linear-gradient(315deg, #de4256 0%, #b78e51 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-left: 20px;
+}
+
+// Responsive Styles
+@media only screen and (max-width: 768px) {
+  .NavDiv {
+    padding: 0 1em;
+  }
+
+  .NavList {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      margin: 0.5em 0;
+      font-size: x-large;
+
+      &:not(:last-child) {
+        &::after {
+          content: '';
+        }
+      }
+    }
+  }
+}
