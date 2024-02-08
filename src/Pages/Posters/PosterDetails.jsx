@@ -50,7 +50,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import styles from './PosterDetails.module.scss';
-import { useBasket } from '../../components/Basket/BasketContext';
+import { useBasket } from '../../Components/Basket/BasketContext';
 
 const PosterDetails = () => {
   const { slug, name, image } = useParams();

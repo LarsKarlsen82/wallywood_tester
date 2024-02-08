@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useBasket } from '../../components/Basket/BasketContext';
+import { useBasket } from '../../Components/Basket/BasketContext';
 
 export const PosterItem = ({ name, image, price, slug }) => {
 
